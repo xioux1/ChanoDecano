@@ -33,3 +33,9 @@ print(readme())
 - `feature_importances.csv` – list of features ranked by average gain.
 
 All code stays within the notebook due to Kaggle's environment restrictions on external files.
+
+## Experiments
+
+`chanodecano.py` now has all duration-related features commented out. This allows
+testing model performance without the dominant `duration` signal. Search for
+`duration-related` in the script for details.
