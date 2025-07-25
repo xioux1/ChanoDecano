@@ -9,6 +9,7 @@ The notebook defines several utilities for data preparation and model training:
 
 - `plot_feature_importances` – utility for visualising the top features.
 - `add_is_min_segments` – flag itineraries that have the fewest segments per query (defined within the notebook).
+- `in_missing_segments` – cuenta cuántas columnas de segmentos de vuelta faltan.
 - Functions such as `_normalise_utc_offset`, `smart_fill_numeric`, `unify_nan_strategy`, and `reduce_mem_usage` to clean and optimise the data.
 - `calculate_hit_rate_at_3` and `lgb_hit_rate_at_3` – custom HitRate@3 metric used during cross-validation.
 - `load_data`, `preprocess_dataframe`, `prepare_matrices`, `encode_categoricals`, and `train_model` build the full LightGBM ranking pipeline. The dataset is read from the Kaggle input directory (e.g. `/kaggle/input/aeroclub-recsys-2025/train.parquet`).
