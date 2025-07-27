@@ -13,6 +13,7 @@ The notebook defines several utilities for data preparation and model training:
 - Functions such as `_normalise_utc_offset`, `smart_fill_numeric`, `unify_nan_strategy`, and `reduce_mem_usage` to clean and optimise the data.
 - `calculate_hit_rate_at_3` and `lgb_hit_rate_at_3` – custom HitRate@3 metric used during cross-validation.
 - `price_vs_carrier_mean` – relación del precio con el promedio por aerolínea de marketing.
+- `sex_baggage_total` – cruza el sexo del pasajero con la cantidad total de equipaje incluido.
 - `load_data`, `preprocess_dataframe`, `prepare_matrices`, `encode_categoricals`, and `train_model` build the full LightGBM ranking pipeline. The dataset is read from the Kaggle input directory (e.g. `/kaggle/input/aeroclub-recsys-2025/train.parquet`).
 - A `main()` routine orchestrates the workflow and saves `submission.csv` and `submission.parquet`.
 
